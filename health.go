@@ -27,6 +27,7 @@ type HealthCheck struct {
 	GracePeriodSeconds     int      `json:"gracePeriodSeconds,omitempty"`
 	IntervalSeconds        int      `json:"intervalSeconds,omitempty"`
 	TimeoutSeconds         int      `json:"timeoutSeconds,omitempty"`
+	DelaySeconds           int      `json:"delaySeconds,omitempty"`
 	IgnoreHTTP1xx          *bool    `json:"ignoreHttp1xx,omitempty"`
 }
 
@@ -129,6 +130,7 @@ func NewDefaultHealthCheck() *HealthCheck {
 		GracePeriodSeconds:     30,
 		IntervalSeconds:        10,
 		TimeoutSeconds:         5,
+		DelaySeconds:           15,
 	}
 }
 

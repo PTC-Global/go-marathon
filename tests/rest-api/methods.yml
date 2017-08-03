@@ -51,7 +51,8 @@
               "path": "/",
               "portIndex": 0,
               "protocol": "HTTP",
-              "timeoutSeconds": 5
+              "timeoutSeconds": 5,
+              "delaySeconds": 15
           }
       ],
       "id": "/fake-app",
@@ -126,7 +127,8 @@
                     "path": "/",
                     "portIndex": 0,
                     "protocol": "HTTP",
-                    "timeoutSeconds": 20
+                    "timeoutSeconds": 20,
+                    "delaySeconds": 15
                 }
             ],
             "id": "/fake-app",
@@ -193,7 +195,8 @@
                     "path": "/",
                     "portIndex": 0,
                     "protocol": "HTTP",
-                    "timeoutSeconds": 20
+                    "timeoutSeconds": 20,
+                    "delaySeconds": 15
                 }
             ],
             "id": "/fake-app-broken",
@@ -340,7 +343,8 @@
                 "path": "/health",
                 "portIndex": 0,
                 "protocol": "HTTP",
-                "timeoutSeconds": 10
+                "timeoutSeconds": 10,
+                "delaySeconds": 15
             }
         ],
         "id": "/fake-app",
@@ -459,7 +463,8 @@
                 "path": "/health",
                 "portIndex": 0,
                 "protocol": "HTTP",
-                "timeoutSeconds": 10
+                "timeoutSeconds": 10,
+                "delaySeconds": 15
             }
         ],
         "id": "/fake-app",
@@ -591,7 +596,8 @@
                 "path": "/health",
                 "portIndex": 0,
                 "protocol": "HTTP",
-                "timeoutSeconds": 10
+                "timeoutSeconds": 10,
+                "delaySeconds": 15
             }
         ],
         "id": "/fake-app-broken",
@@ -1384,7 +1390,8 @@
                   "intervalSeconds": 10,
                   "portIndex": 0,
                   "timeoutSeconds": 10,
-                  "maxConsecutiveFailures": 3
+                  "maxConsecutiveFailures": 3,
+                  "delaySeconds": 15
                 }
               ],
               "id": "apache",
@@ -1425,7 +1432,8 @@
                   "gracePeriodSeconds": 10,
                   "intervalSeconds": 10,
                   "timeoutSeconds": 5,
-                  "maxConsecutiveFailures": 2
+                  "maxConsecutiveFailures": 2,
+                  "delaySeconds": 15
                 }
               ],
               "id": "mysql",
@@ -1466,7 +1474,8 @@
                   "gracePeriodSeconds": 10,
                   "intervalSeconds": 10,
                   "timeoutSeconds": 5,
-                  "maxConsecutiveFailures": 2
+                  "maxConsecutiveFailures": 2,
+                  "delaySeconds": 15
                 }
               ],
               "id": "caching",
@@ -1832,7 +1841,8 @@
                     "path": "/",
                     "portIndex": 0,
                     "protocol": "HTTP",
-                    "timeoutSeconds": 20
+                    "timeoutSeconds": 20,
+                    "delaySeconds": 15
                 }
             ],
             "id": "/fake-app",
@@ -1894,7 +1904,8 @@
                     "path": "/",
                     "portIndex": 0,
                     "protocol": "HTTP",
-                    "timeoutSeconds": 20
+                    "timeoutSeconds": 20,
+                    "delaySeconds": 15
                 }
             ],
             "id": "/fake-app-broken",
@@ -1926,7 +1937,8 @@
                 "path": "/health",
                 "portIndex": 0,
                 "protocol": "HTTP",
-                "timeoutSeconds": 10
+                "timeoutSeconds": 10,
+                "delaySeconds": 15
             }
         ],
         "id": "/no-health-check-results-app",
