@@ -71,7 +71,6 @@ type Application struct {
 	Executor                   *string             `json:"executor,omitempty"`
 	HealthChecks               *[]HealthCheck      `json:"healthChecks,omitempty"`
 	ReadinessChecks            *[]ReadinessCheck   `json:"readinessChecks,omitempty"`
-	Residency                  *Residency          `json:"residency,omitempty"`
 	Instances                  *int                `json:"instances,omitempty"`
 	Mem                        *float64            `json:"mem,omitempty"`
 	Tasks                      []*Task             `json:"tasks,omitempty"`
@@ -463,20 +462,6 @@ func (r *Application) AddReadinessCheck(readinessCheck ReadinessCheck) *Applicat
 func (r *Application) EmptyReadinessChecks() *Application {
 	r.ReadinessChecks = &[]ReadinessCheck{}
 
-	return r
-}
-
-// SetResidency sets the upgrade strategy.
-func (r *Application) SetResidency(us Residency) *Application {
-	r.Residency = &us
-	return r
-}
-
-// EmptyResidency explicitly empties the residency -- use this if
-// you need to empty the residency of an application that already has
-// the residency set (setting it to nil will keep the current value).
-func (r *Application) EmptyResidency() *Application {
-	r.Residency = &Residency{}
 	return r
 }
 
