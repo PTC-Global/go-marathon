@@ -34,8 +34,7 @@
       "protocol": "HTTP",
       "gracePeriodSeconds": 30,
       "intervalSeconds": 5,
-      "timeoutSeconds": 5,
-      "delaySeconds": 15
+      "timeoutSeconds": 5
     }
   ],
   "instances": 2,

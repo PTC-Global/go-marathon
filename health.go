@@ -130,7 +130,6 @@ func NewDefaultHealthCheck() *HealthCheck {
 		GracePeriodSeconds:     30,
 		IntervalSeconds:        10,
 		TimeoutSeconds:         5,
-		DelaySeconds:           15,
 	}
 }
 
